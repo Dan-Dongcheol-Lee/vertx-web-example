@@ -2,7 +2,8 @@ var vertx = require('vertx');
 var console = require('vertx/console');
 var container = require('vertx/container');
 var http = require('vertx/http');
-var eventBus = require('vertx/event_bus');
+var eventBus = vertx.eventBus;
+var config = container.config;
 
 var httpServer = http.createHttpServer();
 vertx.createSockJSServer(httpServer).bridge({prefix: '/monitor'}, [{}], [{}]);
