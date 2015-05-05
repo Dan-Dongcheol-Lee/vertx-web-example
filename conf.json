@@ -1,0 +1,19 @@
+{
+  "webServer": {
+    "instances": 2,
+    "host": "localhost",
+    "port": 80,
+    "bridge": true,
+    "sjs_config": {"prefix": "/chat1"}
+  },
+  "simpleChat": {
+    "instances": 2,
+    "host": "localhost",
+    "port": 7010
+  },
+  "simpleMonitor": {
+    "instances": 2,
+    "host": "localhost",
+    "port": 8010
+  }
+}

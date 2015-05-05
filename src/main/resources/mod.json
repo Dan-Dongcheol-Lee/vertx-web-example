@@ -1,0 +1,17 @@
+{
+
+  "main":"starter.js",
+
+  "description":"vertx2 web example using web-server module",
+  "licenses": ["The Apache Software License Version 2.0"],
+  "author": "Dan-Dongcheol-Lee",
+
+  // Optional fields
+  "developers": ["Dan-Dongcheol-Lee"],
+  "keywords": ["spike", "vertx", "chat", "web"],
+  "homepage": "https://github.com/Dan-Dongcheol-Lee/vertx-web-example",
+
+  "auto-redeploy": true,
+  "includes":"io.vertx~mod-web-server~2.0.0-final"
+
+}
