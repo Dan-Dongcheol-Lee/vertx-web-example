@@ -9,11 +9,11 @@
   "simpleChat": {
     "instances": 2,
     "host": "localhost",
-    "port": 7010
+    "port": 11010
   },
   "simpleMonitor": {
     "instances": 2,
     "host": "localhost",
-    "port": 8010
+    "port": 12010
   }
 }

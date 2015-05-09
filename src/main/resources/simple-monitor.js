@@ -11,7 +11,7 @@ httpServer.listen(config.port, config.host, function(err) {
     if (err) {
         console.log('Unable to start a server: ' + err);
     } else {
-        vertx.setPeriodic(10000, function(timerID) {
+        vertx.setPeriodic(1000, function(timerID) {
             var runtime = java.lang.Runtime.getRuntime();
             var heapStatus = {
                 cores: runtime.availableProcessors(),

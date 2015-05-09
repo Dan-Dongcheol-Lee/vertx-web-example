@@ -1,0 +1,48 @@
+<div class="container">
+    <h3><b>{{userName}}</b>. welcome to chat room</h3>
+    <div class="form-group">
+        <div class="col-md-9">
+            <h4>Chat text</h4>
+            <div id="chat-table" style="overflow-y:auto;" class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th width="60%">Message</th>
+                            <th>Sent date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="message in messages" ng-class="message.action">
+                            <td><b>{{message.userName}}</b></td>
+                            <td>{{message.message}}</td>
+                            <td>{{message.sentDate}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <form name="form">
+            <div class="col-md-9">
+                <label for="targetUser">User</label>
+                <div class="form-group">
+                    <input type="text" id="targetUser" name="targetUser"
+                           class="form-control"
+                           ng-model="targetUser" ng-required="true"/>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <label for="message">Message</label>
+                <div class="form-group">
+                    <input type="text" id="message" name="message"
+                           class="form-control"
+                           ng-model="message" ng-required="true"/>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <button class="btn btn-primary" ng-click="publishMessage()">Publish</button>
+                <button class="btn btn-primary" ng-click="sendMessage()">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
